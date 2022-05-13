@@ -47,9 +47,15 @@ header {
 }
 
 header figcaption img {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 30%;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  transition: 0.4s;
+  transform: scale(0.8);
+}
+
+header figcaption img:hover {
+  transform: scale(1);
 }
 
 header h3 {
@@ -73,10 +79,6 @@ main {
   margin-bottom: 3rem;
 }
 
-.redes-sociais {
-  background-color: red;
-  width: 600px;
-}
 main,
 ul {
   display: flex;
@@ -113,10 +115,6 @@ ul li .btn {
   padding: 1.3rem;
   transition: 0.5s;
 }
-/* .btn {
-    width: 200px;
-    height: 50px;
-  } */
 
 .btn-1:hover,
 .btn-2:hover,
@@ -125,29 +123,32 @@ ul li .btn {
   letter-spacing: 0.25rem;
 }
 
-.btn-1:hover {
+/* .btn-1:hover {
   background-color: var(--hover-btn-1);
   color: var(--hover-btn-1);
   box-shadow: 0 0 35px var(--hover-btn-1);
-}
+} */
 
-.btn-2:hover {
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover,
+.btn-4:hover {
   background-color: var(--hover-btn-2);
   color: var(--hover-btn-2);
   box-shadow: 0 0 35px var(--hover-btn-2);
 }
 
-.btn-3:hover {
+/* .btn-3:hover {
   background-color: var(--hover-btn-3);
   color: var(--hover-btn-3);
   box-shadow: 0 0 35px var(--hover-btn-3);
-}
+} */
 
-.btn-4:hover {
+/* .btn-4:hover {
   background-color: var(--hover-btn-4);
   color: var(--hover-btn-4);
   box-shadow: 0 0 35px var(--hover-btn-4);
-}
+} */
 
 .btn::before {
   content: "";
@@ -199,4 +200,32 @@ ul li .btn {
 .btn:hover i::after {
   width: 20px;
   left: 80%;
+}
+
+/*=======FOOTER=======*/
+footer {
+  padding: 3rem;
+}
+footer h3 {
+  color: var(--color-developer);
+  font-size: 2.2rem;
+  font-weight: 700;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer h3 a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 2.2rem;
+  transition: 0.5s;
+}
+
+footer h3:hover {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+footer h3 a:hover {
+  color: var(--color-developer);
 }
